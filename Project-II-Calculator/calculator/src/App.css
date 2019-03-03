@@ -1,0 +1,66 @@
+.container{
+  width: 400px;
+  height: 600px;
+  display: flex;
+  box-shadow: 10px 15px 20px #343436;
+}
+
+.outputResult {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 16.67%;
+  font-size: 80px;
+  color: white;
+  background-color: black;
+  margin: 0;
+  font-family: Segment14Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.clears {
+  width: 75%;
+  height: 16.67%;
+  font-size: 40px;
+  margin: 0;
+}
+
+.clears:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.numbers {
+  width: 25%;
+  height: 16.67%;
+  margin: 0;
+  font-size: 40px;
+}
+
+.numbers:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.operators {
+  width: 25%;
+  height: 16.67%;
+  margin: 0;
+  background-color: red;
+  color: white;
+  font-size: 40px;
+}
+
+.operators:hover {
+  color: red;
+  background-color: white;
+  cursor: pointer;
+}
+
+.numZero {
+  width: 75%;
+}
