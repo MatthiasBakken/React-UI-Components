@@ -9,7 +9,7 @@ const CardContent = () => {
       style={{
         width: 614, display: 'flex',
         flexDirection: 'column',
-        border: '1px solid #EEE',
+        border: '1px solid #989898',
         borderBottomLeftRadius: '1rem',
         borderBottomRightRadius: '1rem'
       }}>
