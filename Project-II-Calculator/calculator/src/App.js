@@ -91,7 +91,6 @@ function equalsClick() {
       operatorType = '';
       // returns the output screen to total of a / b
       return outputResult.innerHTML = a / b;
-      break;
     // if multiplication operator, do the following code block
     case 'x':
       // saves total to buttonPush1
@@ -104,7 +103,6 @@ function equalsClick() {
       operatorType = '';
       // returns the output screen to total of a * b
       return outputResult.innerHTML = a * b;
-      break;
     // if subtraction operator, do the following code block
     case '-':
       // saves total to buttonPush1
@@ -117,7 +115,6 @@ function equalsClick() {
       operatorType = '';
       // returns the output screen to total of a - b
       return outputResult.innerHTML = a - b;
-      break;
     // if addition operator, do the following code block
     case '+':
       // saves total to buttonPush1
@@ -130,7 +127,6 @@ function equalsClick() {
       operatorType = '';
       // returns the output screen to total of a + b
       return outputResult.innerHTML = a + b;
-      break;
     default:
       break;
   }
