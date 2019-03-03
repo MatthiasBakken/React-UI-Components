@@ -78,54 +78,61 @@ function equalsClick() {
   let a = parseInt(buttonPush1.join(''));
   // b is now equal to buttonPush1 - example: [2,2] to 22
   let b = parseInt(buttonPush2.join(''));
-  // if division operator, do the following code block
-  if (operatorType === '/') {
-    // saves total to buttonPush1
-    buttonPush1 = [`${a / b}`];
-    // clears buttonPush2
-    buttonPush2 = [];
-    // sets operatorPush to false
-    operatorPush = false;
-    // sets operatorType back to empty string
-    operatorType = '';
-    // returns the output screen to total of a / b
-    return outputResult.innerHTML = a / b;
+  switch (operatorType) {
+    // if division operator, do the following code block
+    case '/':
+      // saves total to buttonPush1
+      buttonPush1 = [`${a / b}`];
+      // clears buttonPush2
+      buttonPush2 = [];
+      // sets operatorPush to false
+      operatorPush = false;
+      // sets operatorType back to empty string
+      operatorType = '';
+      // returns the output screen to total of a / b
+      return outputResult.innerHTML = a / b;
+      break;
     // if multiplication operator, do the following code block
-  } else if (operatorType === 'x') {
-    // saves total to buttonPush1
-    buttonPush1 = [`${a * b}`];
-    // clears buttonPush2
-    buttonPush2 = [];
-    // sets operatorPush to false
-    operatorPush = false;
-    // sets operatorType back to empty string
-    operatorType = '';
-    // returns the output screen to total of a * b
-    return outputResult.innerHTML = a * b;
+    case 'x':
+      // saves total to buttonPush1
+      buttonPush1 = [`${a * b}`];
+      // clears buttonPush2
+      buttonPush2 = [];
+      // sets operatorPush to false
+      operatorPush = false;
+      // sets operatorType back to empty string
+      operatorType = '';
+      // returns the output screen to total of a * b
+      return outputResult.innerHTML = a * b;
+      break;
     // if subtraction operator, do the following code block
-  } else if (operatorType === '-') {
-    // saves total to buttonPush1
-    buttonPush1 = [`${a - b}`];
-    // clears buttonPush2
-    buttonPush2 = [];
-    // sets operatorPush to false
-    operatorPush = false;
-    // sets operatorType back to empty string
-    operatorType = '';
-    // returns the output screen to total of a - b
-    return outputResult.innerHTML = a - b;
+    case '-':
+      // saves total to buttonPush1
+      buttonPush1 = [`${a - b}`];
+      // clears buttonPush2
+      buttonPush2 = [];
+      // sets operatorPush to false
+      operatorPush = false;
+      // sets operatorType back to empty string
+      operatorType = '';
+      // returns the output screen to total of a - b
+      return outputResult.innerHTML = a - b;
+      break;
     // if addition operator, do the following code block
-  } else if (operatorType === '+') {
-    // saves total to buttonPush1
-    buttonPush1 = [`${a + b}`];
-    // clears buttonPush2
-    buttonPush2 = [];
-    // sets operatorPush to false
-    operatorPush = false;
-    // sets operatorType back to empty string
-    operatorType = '';
-    // returns the output screen to total of a + b
-    return outputResult.innerHTML = a + b;
+    case '+':
+      // saves total to buttonPush1
+      buttonPush1 = [`${a + b}`];
+      // clears buttonPush2
+      buttonPush2 = [];
+      // sets operatorPush to false
+      operatorPush = false;
+      // sets operatorType back to empty string
+      operatorType = '';
+      // returns the output screen to total of a + b
+      return outputResult.innerHTML = a + b;
+      break;
+    default:
+      break;
   }
 };
 
